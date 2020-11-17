@@ -512,10 +512,10 @@ class ImageView(QtWidgets.QGraphicsView):
                     self.rgbaWidgetShown = True
 
                     if(self.selectedA):
-                        self.imageData = self.itemA.pixmap().toImage()
+                        self.imageData = self.itemA.pixmap()
 
                     else:
-                        self.imageData = self.itemB.pixmap().toImage()
+                        self.imageData = self.itemB.pixmap()
 
                     pos = self.mapToScene(event.pos()).toPoint()
                     buffer = "B"
